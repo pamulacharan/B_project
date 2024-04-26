@@ -1,0 +1,95 @@
+String operator = req.getParameter("operator"); res.setContentType("index");
+ PrintWriter out = res.getWriter();
+ out.println("<B>The selected operator is: "); out.println(operator);
+ out.close();
+  
+  
+  
+  String operator = req.getParameter("operator");
+			res.setContentType("index");
+			PrintWriter ou = res.getWriter();
+			ou.println("<B>The selected operator is: ");
+			ou.println(operator);
+			ou.println("\n");
+		    ou.close();
+		    
+		    
+		    
+  FileReader Adding = new FileReader("Adding.java");
+		Scanner src = new Scanner(Adding);
+		System.out.println(Adding);
+		
+		
+			// Addition-------------------------------------------------------------------
+			int i = Integer.parseInt(req.getParameter("num1"));
+			int j = Integer.parseInt(req.getParameter("num2"));
+			int k = i + j;
+			PrintWriter out0 = res.getWriter();
+			out0.println();
+			out0.println("The Sum of \t\t" + i + " and " + j + " is " + k);
+			out0.println();
+		
+			// Subtraction---------------------------------------------------------------
+			int i1 = Integer.parseInt(req.getParameter("num1"));
+			int j1 = Integer.parseInt(req.getParameter("num2"));
+			int k1 = i1 - j1;
+			PrintWriter out1 = res.getWriter();
+			out1.println("The Subtraction of \t" + i1 + " and " + j1 + " is " + k1);
+			out1.println();
+		
+			// Multiplication-------------------------------------------------------------
+			int i2 = Integer.parseInt(req.getParameter("num1"));
+			int j2 = Integer.parseInt(req.getParameter("num2"));
+			int k2 = i2 * j2;
+			PrintWriter out2 = res.getWriter();
+			out2.println("The Multiplication of \t" + i2 + " and " + j2 + " is " + k2);
+			out2.println();
+		
+			// Division-------------------------------------------------------------------
+			int i3 = Integer.parseInt(req.getParameter("num1"));
+			int j3 = Integer.parseInt(req.getParameter("num2"));
+			int k3 = i3 / j3;
+			PrintWriter out3 = res.getWriter();
+			out3.println("The Division of \t" + i3 + " and " + j3 + " is " + k3);
+			out3.println();
+	
+			// Module---------------------------------------------------------------------
+			int i4 = Integer.parseInt(req.getParameter("num1"));
+			int j4 = Integer.parseInt(req.getParameter("num2"));
+			int k4 = i4 % j4;
+			PrintWriter out4 = res.getWriter();
+			out4.println("The Module of \t\t" + i4 + " and " + j4 + " is " + k4);
+			out4.println();
+			
+			
+  
+ //Addition-------------------------------------------------------------------
+ int i = Integer.parseInt(req.getParameter("num1")); int j =
+ Integer.parseInt(req.getParameter("num2")); int k=i+j; PrintWriter out =
+ res.getWriter(); out.println("The Sum of \t\t"+i+" and "+j+" is "+k);
+ out.println();
+  
+ //Subtraction----------------------------------------------------------------
+ int i1 = Integer.parseInt(req.getParameter("num1")); int j1 =
+ Integer.parseInt(req.getParameter("num2")); int k1=i1-j1; PrintWriter out1 =
+ res.getWriter();
+ out1.println("The Subtraction of \t"+i1+" and "+j1+" is "+k1); out.println();
+ 
+ //Multiplication-------------------------------------------------------------
+ int i2 = Integer.parseInt(req.getParameter("num1")); int j2 =
+ Integer.parseInt(req.getParameter("num2")); int k2=i2*j2; PrintWriter out2 =
+ res.getWriter();
+ out2.println("The Multiplication of \t"+i2+" and "+j2+" is "+k2);
+ out.println();
+ 
+ //Division-------------------------------------------------------------------
+ int i3 = Integer.parseInt(req.getParameter("num1")); int j3 =
+ Integer.parseInt(req.getParameter("num2")); int k3=i3/j3; PrintWriter out3 =
+ res.getWriter(); out3.println("The Division of \t"+i3+" and "+j3+" is "+k3);
+ out.println();
+ 
+ //Module---------------------------------------------------------------------
+ int i4 = Integer.parseInt(req.getParameter("num1")); int j4 =
+ Integer.parseInt(req.getParameter("num2")); int k4=i4%j4; PrintWriter out4 =
+ res.getWriter(); out4.println("The Module of \t\t"+i4+" and "+j4+" is "+k4);
+ out.println();
